@@ -82,4 +82,4 @@ static function GetMesh (triCount : int, triOffset : int, totalWidth : int, tota
     mesh.uv = uvs;
     mesh.uv2 = uvs2;
     return mesh;
-}))
+}
