@@ -8,15 +8,15 @@ on:
 
 jobs:
   test:
-   runs-on: ubuntu-latest
-   steps:
-    - name: mentor
-      uses: merly-ai/mentor-action@v1
-      with:
-        mm-key: ${{ secrets.MENTOR_KEY }}
-      
-    - name: Checkout code
-      uses: actions/checkout@v4
-      with:
-        # Fetch all branches to ensure 'main' is available
-        ref: main
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: mentor
+        uses: merly-ai/mentor-action@v1
+        with:
+          checkout-code: false
