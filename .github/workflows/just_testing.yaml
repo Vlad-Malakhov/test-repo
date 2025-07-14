@@ -12,7 +12,7 @@ jobs:
     - name: mentor
       uses: merly-ai/mentor-action@v1
       with:
-       mm-key: {{ secret.mentor-key }}
+       mm-key: {{ secret.mentor_key }}
        debug: true
       
     - name: Checkout code
