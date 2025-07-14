@@ -14,7 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          path: /lolo
+          fetch-depth: 2
+
       - name: mentor
         uses: merly-ai/mentor-action@v1
         with:
