@@ -12,8 +12,8 @@ jobs:
     - name: mentor
       uses: merly-ai/mentor-action@v1
       with:
-         mm-key: {{ secret.mentor_key }}
-         debug: true
+        mm-key: ${{ secrets.MENTOR_KEY }}
+        debug: true
       
     - name: Checkout code
       uses: actions/checkout@v4
