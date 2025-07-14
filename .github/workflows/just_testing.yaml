@@ -11,12 +11,12 @@ jobs:
    steps:
     - name: mentor
       uses: merly-ai/mentor-action@v1
-      with:
-        mm-key: {{ secret.mentor_key }}
-        debug: true
+        with:
+          mm-key: {{ secret.mentor_key }}
+          debug: true
       
     - name: Checkout code
       uses: actions/checkout@v4
-      with:
-        # Fetch all branches to ensure 'main' is available
-        ref: main
+        with:
+          # Fetch all branches to ensure 'main' is available
+          ref: main
